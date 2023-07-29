@@ -1,0 +1,68 @@
+source/bmp.c:25:26: style: Variable 'bmppad' is assigned a value that is never used. [unreadVariable]
+ unsigned char bmppad[3] = {0, 0, 0};
+                         ^
+source/buffer.c:118:8: style: Same expression on both sides of '^='. [duplicateExpression]
+  *ptr ^= *ptr;
+       ^
+source/font.c:35:18: style: Variable 'offset' is assigned a value that is never used. [unreadVariable]
+ uint16_t offset = index * font->glyph_height * font->glyph_width_bytes;
+                 ^
+source/graphics.c:90:16: style: Unused variable: pixel [unusedVariable]
+  ugui_pixel_t pixel;
+               ^
+source/graphics.c:159:8: style: Variable 'd' is assigned a value that is never used. [unreadVariable]
+ int d = 2 * deltay - deltax;
+       ^
+source/sprite.c:9:8: style: Checking if unsigned expression 'x' is less than zero. [unsignedLessThanZero]
+ if((x < 0) || (x > sprite->w) || (y < 0) || (y > sprite->h)) {
+       ^
+source/sprite.c:9:38: style: Checking if unsigned expression 'y' is less than zero. [unsignedLessThanZero]
+ if((x < 0) || (x > sprite->w) || (y < 0) || (y > sprite->h)) {
+                                     ^
+source/widgets/menu_widget.c:33:16: style: Variable 'cell_bounds.y' is assigned a value that is never used. [unreadVariable]
+ cell_bounds.y = header_height;
+               ^
+source/widgets/menu_widget.c:71:8: style: Variable 'h' is assigned a value that is never used. [unreadVariable]
+ int h = bounds->h;
+       ^
+source/buffer.c:141:0: style: The function '_ugui_buffer_destroy' is never used. [unusedFunction]
+
+^
+source/buffer.c:86:0: style: The function '_ugui_buffer_get' is never used. [unusedFunction]
+
+^
+source/buffer.c:55:0: style: The function '_ugui_buffer_get_row' is never used. [unusedFunction]
+
+^
+source/bmp.c:99:0: style: The function 'bmp_create_bool' is never used. [unusedFunction]
+
+^
+example/source/menu_window.c:144:0: style: The function 'menu_window_destroy' is never used. [unusedFunction]
+
+^
+example/source/text_window.c:41:0: style: The function 'text_window_destroy' is never used. [unusedFunction]
+
+^
+source/graphics.c:52:0: style: The function 'ugui_graphics_destroy' is never used. [unusedFunction]
+
+^
+source/graphics.c:117:0: style: The function 'ugui_graphics_fill_rect' is never used. [unusedFunction]
+
+^
+source/layer.c:79:0: style: The function 'ugui_layer_set_visible' is never used. [unusedFunction]
+
+^
+source/widgets/menu_widget.c:153:0: style: The function 'ugui_menu_widget_create' is never used. [unusedFunction]
+
+^
+source/widgets/menu_widget.c:192:0: style: The function 'ugui_menu_widget_set_draw' is never used. [unusedFunction]
+
+^
+source/widgets/text_widget.c:99:0: style: The function 'ugui_text_widget_create' is never used. [unusedFunction]
+
+^
+source/window.c:39:0: style: The function 'ugui_window_set_window_handlers' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
